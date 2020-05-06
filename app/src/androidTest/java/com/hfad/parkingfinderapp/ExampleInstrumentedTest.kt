@@ -1,4 +1,4 @@
-package com.isi.pzrkingfinderapp
+package com.hfad.parkingfinderapp
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

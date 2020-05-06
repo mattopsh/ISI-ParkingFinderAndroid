@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/actionBar1Bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#66ff0000"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp" />
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="#ffffff"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@id/actionBar1Bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/backArrow1IV"
+        app:layout_constraintTop_toTopOf="@id/actionBar1Bg"
+        tools:text="Example title" />
+
+    <ImageView
+        android:id="@+id/backArrow1IV"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:padding="8dp"
+        android:src="@drawable/button_back_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/titleTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/titleTV" />
+
+    <ImageView
+        android:id="@+id/searchIV"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/ic_search"
+        app:layout_constraintBottom_toBottomOf="@id/titleTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/titleTV" />
+
+</android.support.constraint.ConstraintLayout>

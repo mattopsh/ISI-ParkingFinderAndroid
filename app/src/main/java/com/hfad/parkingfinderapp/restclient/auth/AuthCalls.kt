@@ -1,9 +1,9 @@
-package com.isi.pzrkingfinderapp.restclient.auth
+package com.hfad.parkingfinderapp.restclient.auth
 
-import com.isi.pzrkingfinderapp.restclient.auth.dto.AccessTokenResponseDto
-import com.isi.pzrkingfinderapp.restclient.auth.dto.FbTokenDto
-import com.isi.pzrkingfinderapp.restclient.auth.dto.TokensResponseDto
-import com.isi.pzrkingfinderapp.restclient.auth.dto.UserCredentialsDto
+import com.hfad.parkingfinderapp.restclient.auth.dto.AccessTokenResponseDto
+import com.hfad.parkingfinderapp.restclient.auth.dto.FbTokenDto
+import com.hfad.parkingfinderapp.restclient.auth.dto.TokensResponseDto
+import com.hfad.parkingfinderapp.restclient.auth.dto.UserCredentialsDto
 import io.reactivex.Single
 import retrofit2.Response
 import retrofit2.http.*

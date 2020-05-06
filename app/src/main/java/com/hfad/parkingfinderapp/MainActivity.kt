@@ -1,7 +1,8 @@
-package com.isi.pzrkingfinderapp
+package com.hfad.parkingfinderapp
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.hfad.parkingfinderapp.R
 
 class MainActivity : AppCompatActivity() {
 
