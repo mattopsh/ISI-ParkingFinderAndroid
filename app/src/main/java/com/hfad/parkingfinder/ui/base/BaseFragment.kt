@@ -11,8 +11,6 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.Toast
 import com.hfad.parkingfinder.R
-import com.hfad.parkingfinder.ui.welcome.WelcomeActivity
-import com.hfad.parkingfinder.MainActivity
 import com.hfad.parkingfinder.utils.mvp.ViewException
 import com.hfad.parkingfinder.R
 

@@ -10,7 +10,6 @@ import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.Toast
-import com.hfad.parkingfinder.MainActivity
 import com.hfad.parkingfinder.utils.mvp.ViewException
 import kotlinx.android.synthetic.main.layout_normal_action_bar.view.*
 import kotlinx.android.synthetic.main.layout_search_action_bar.view.*
