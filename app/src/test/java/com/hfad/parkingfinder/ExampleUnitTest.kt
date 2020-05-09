@@ -1,4 +1,4 @@
-package com.hfad.parkingfinderapp
+package com.hfad.parkingfinder
 
 import org.junit.Test
 

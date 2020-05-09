@@ -1,4 +1,4 @@
-package com.hfad.parkingfinderapp.ui.base
+package com.hfad.parkingfinder.ui.base
 
 import android.content.Context
 import android.content.Intent
@@ -12,9 +12,9 @@ import android.widget.EditText
 import android.widget.Toast
 import com.hfad.parkingfinder.R
 import com.hfad.parkingfinder.ui.welcome.WelcomeActivity
-import com.hfad.parkingfinderapp.MainActivity
-import com.hfad.parkingfinderapp.utils.mvp.ViewException
-import com.hfad.parkingfinderapp.R
+import com.hfad.parkingfinder.MainActivity
+import com.hfad.parkingfinder.utils.mvp.ViewException
+import com.hfad.parkingfinder.R
 
 abstract class BaseFragment : ViewException, Fragment() {
 

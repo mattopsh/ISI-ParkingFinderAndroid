@@ -1,4 +1,4 @@
-package com.hfad.parkingfinderapp.ui.base
+package com.hfad.parkingfinder.ui.base
 
 import android.content.Context
 import android.content.Intent
@@ -10,8 +10,8 @@ import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.Toast
-import com.hfad.parkingfinderapp.MainActivity
-import com.hfad.parkingfinderapp.utils.mvp.ViewException
+import com.hfad.parkingfinder.MainActivity
+import com.hfad.parkingfinder.utils.mvp.ViewException
 import kotlinx.android.synthetic.main.layout_normal_action_bar.view.*
 import kotlinx.android.synthetic.main.layout_search_action_bar.view.*
 import org.jetbrains.anko.contentView
