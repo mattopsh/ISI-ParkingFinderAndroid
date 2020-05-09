@@ -1,11 +1,25 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">#2F80ED</item>
+        <item name="textColorError">@android:color/holo_red_light</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="AppThemeSolidNav" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">#2F80ED</item>
+        <item name="textColorError">@android:color/holo_red_light</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
     </style>
 
 </resources>
