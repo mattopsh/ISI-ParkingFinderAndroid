@@ -16,6 +16,26 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name="com.hfad.parkingfinder.ui.createaccount.CreateAccountActivity"/>
+        <activity android:name="com.hfad.parkingfinder.ui.findbylocation.FindByLocationActivity"/>
+        <activity android:name="com.hfad.parkingfinder.ui.findnearest.FindNearestActivity"/>
+        <activity android:name="com.hfad.parkingfinder.ui.findneartoprovider.FindNearToProviderActivity"/>
+        <activity android:name="com.hfad.parkingfinder.ui.findprovider.FindProviderActivity"/>
+        <activity android:name="com.hfad.parkingfinder.ui.login.LoginActivity"/>
+        <activity android:name="com.hfad.parkingfinder.ui.main.MainActivity"/>
+        <activity android:name="com.hfad.parkingfinder.ui.parkingdetails.ParkingDetailsActivity"/>
+        <activity
+                android:name="com.hfad.parkingfinder.ui.reportinconsistency.newparking.additionaldetails.ReportNewParkingDetailsActivity"/>
+        <activity
+                android:name="com.hfad.parkingfinder.ui.reportinconsistency.newparking.map.ReportNewParkingMapActivity"/>
+        <activity
+                android:name="com.hfad.parkingfinder.ui.reportinconsistency.nonexistentparking.ReportNonexistentParkingActivity"/>
+        <activity android:name="com.hfad.parkingfinder.ui.reportinconsistency.other.ReportOtherInconsistencyActivity"/>
+        <activity android:name="com.hfad.parkingfinder.ui.reportinconsistency.select.SelectInconsistencyTypeActivity"/>
+        <activity android:name="com.hfad.parkingfinder.ui.reportparkingstate.ReportParkingStateActivity"/>
+        <activity android:name="com.hfad.parkingfinder.ui.settings.SettingsActivity"/>
+        <activity android:name="com.hfad.parkingfinder.ui.splash.SplashActivity"/>
+        <activity android:name="com.hfad.parkingfinder.ui.welcome.WelcomeActivity"/>
     </application>
 
 </manifest>
