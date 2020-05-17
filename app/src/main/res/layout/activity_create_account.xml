@@ -46,9 +46,13 @@
             android:id="@+id/emailTIL"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="36dp"
-            android:layout_marginStart="48dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:hint="@string/your_email"
+            android:paddingEnd="3dp"
+            android:paddingStart="3dp"
+            android:paddingTop="6dp"
             android:textColorHint="#b2ffffff"
             app:errorEnabled="true"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -66,5 +70,70 @@
 
     </android.support.design.widget.TextInputLayout>
 
+    <View
+            android:id="@+id/bg2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="26dp"
+            android:background="#66000000"
+            app:layout_constraintBottom_toBottomOf="@+id/passwordTIL"
+            app:layout_constraintEnd_toEndOf="@+id/passwordTIL"
+            app:layout_constraintStart_toStartOf="@+id/passwordTIL"
+            app:layout_constraintTop_toTopOf="@+id/passwordTIL" />
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/passwordTIL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:hint="@string/password"
+            android:paddingEnd="3dp"
+            android:paddingStart="3dp"
+            android:paddingTop="6dp"
+            android:textColorHint="#b2ffffff"
+            app:errorEnabled="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/emailTIL">
+
+        <android.support.design.widget.TextInputEditText
+                android:id="@+id/passwordTIET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-2dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:inputType="textPassword"
+                android:textColor="#b2ffffff" />
+    </android.support.design.widget.TextInputLayout>
+
+    <ProgressBar
+            android:id="@+id/loadingAnimationPB"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:progressTint="#2F80ED"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/registerBt"
+            app:layout_constraintLeft_toLeftOf="@+id/registerBt"
+            app:layout_constraintRight_toRightOf="@+id/registerBt"
+            app:layout_constraintTop_toTopOf="@+id/registerBt" />
+
+    <Button
+            android:id="@+id/registerBt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_green"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/register"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bg2" />
 
 </android.support.constraint.ConstraintLayout>
