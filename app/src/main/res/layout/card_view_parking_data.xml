@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    app:cardBackgroundColor="#66000000"
+    app:cardCornerRadius="16dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/parkingNameTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toStartOf="@+id/veracityPB"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Parking" />
+
+        <TextView
+            android:id="@+id/parkingAddressTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@+id/veracityPB"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/parkingNameTV"
+            tools:text="ul. Nowa 3, 62-700 Turek" />
+
+        <ImageView
+            android:id="@+id/myLocationIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ic_my_location"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/parkingAddressTV" />
+
+        <ImageView
+            android:id="@+id/leftArrowIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:src="@drawable/arrow_left"
+            app:layout_constraintBottom_toBottomOf="@id/myLocationIV"
+            app:layout_constraintStart_toEndOf="@id/myLocationIV"
+            app:layout_constraintTop_toTopOf="@id/myLocationIV" />
+
+        <TextView
+            android:id="@+id/distanceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/myLocationIV"
+            app:layout_constraintStart_toEndOf="@id/leftArrowIV"
+            app:layout_constraintTop_toTopOf="@id/myLocationIV"
+            tools:text="250m" />
+
+        <ImageView
+            android:id="@+id/rightArrowIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:src="@drawable/arrow_right"
+            app:layout_constraintBottom_toBottomOf="@id/myLocationIV"
+            app:layout_constraintStart_toEndOf="@id/distanceTV"
+            app:layout_constraintTop_toTopOf="@id/myLocationIV" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_parking"
+            app:layout_constraintBottom_toBottomOf="@id/myLocationIV"
+            app:layout_constraintStart_toEndOf="@id/rightArrowIV"
+            app:layout_constraintTop_toTopOf="@id/myLocationIV" />
+
+
+
+        <TextView
+            android:id="@+id/freeSpacesTextTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:paddingBottom="4dp"
+            android:text="free spaces"
+            android:textColor="@color/lightGreen"
+            app:layout_constraintStart_toEndOf="@id/freeSpacesTV"
+            app:layout_constraintTop_toBottomOf="@id/myLocationIV" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Veracity"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@id/veracityPB"
+            app:layout_constraintStart_toStartOf="@id/veracityPB"
+            app:layout_constraintTop_toBottomOf="@id/veracityPB" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
