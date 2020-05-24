@@ -20,31 +20,31 @@
         android:layout_marginTop="4dp">
 
         <TextView
-            android:id="@+id/parkingNameTV"
+            android:id="@+id/parkingName2TV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:maxLines="1"
+            android:text="Parking name"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toStartOf="@+id/veracity2PB"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/parkingAddress2TV"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="4dp"
             android:fontFamily="@font/montserrat_medium"
             android:maxLines="1"
             android:textColor="@android:color/white"
-            android:textSize="17sp"
-            app:layout_constraintEnd_toStartOf="@+id/veracityPB"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="Parking" />
-
-        <TextView
-            android:id="@+id/parkingAddressTV"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:fontFamily="@font/montserrat_medium"
-            android:maxLines="1"
-            android:textColor="@android:color/white"
             android:textSize="10sp"
-            app:layout_constraintEnd_toStartOf="@+id/veracityPB"
+            app:layout_constraintEnd_toStartOf="@+id/veracity2PB"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/parkingNameTV"
+            app:layout_constraintTop_toBottomOf="@id/parkingName2TV"
             tools:text="ul. Nowa 3, 62-700 Turek" />
 
         <ImageView
@@ -54,20 +54,20 @@
             android:layout_marginTop="3dp"
             android:src="@drawable/ic_my_location"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/parkingAddressTV" />
+            app:layout_constraintTop_toBottomOf="@id/parkingAddress2TV" />
 
         <ImageView
             android:id="@+id/leftArrowIV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="2dp"
-            android:src="@drawable/arrow_left"
+            android:src="@drawable/arrow_left_small"
             app:layout_constraintBottom_toBottomOf="@id/myLocationIV"
             app:layout_constraintStart_toEndOf="@id/myLocationIV"
             app:layout_constraintTop_toTopOf="@id/myLocationIV" />
 
         <TextView
-            android:id="@+id/distanceTV"
+            android:id="@+id/distanceToParkingTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="2dp"
@@ -84,12 +84,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="2dp"
-            android:src="@drawable/arrow_right"
+            android:src="@drawable/arrow_right_small"
             app:layout_constraintBottom_toBottomOf="@id/myLocationIV"
-            app:layout_constraintStart_toEndOf="@id/distanceTV"
+            app:layout_constraintStart_toEndOf="@id/distanceToParkingTV"
             app:layout_constraintTop_toTopOf="@id/myLocationIV" />
 
         <ImageView
+            android:id="@+id/parkingIV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_parking"
@@ -97,8 +98,49 @@
             app:layout_constraintStart_toEndOf="@id/rightArrowIV"
             app:layout_constraintTop_toTopOf="@id/myLocationIV" />
 
+        <ImageView
+            android:id="@+id/leftArrow2IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left_small"
+            app:layout_constraintBottom_toBottomOf="@id/myLocationIV"
+            app:layout_constraintStart_toEndOf="@id/parkingIV"
+            app:layout_constraintTop_toTopOf="@id/myLocationIV" />
+
         <TextView
-            android:id="@+id/freeSpacesTV"
+            android:id="@+id/distanceToProviderTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/myLocationIV"
+            app:layout_constraintStart_toEndOf="@id/leftArrow2IV"
+            app:layout_constraintTop_toTopOf="@id/myLocationIV"
+            tools:text="250m" />
+
+        <ImageView
+            android:id="@+id/rightArrow2IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:src="@drawable/arrow_right_small"
+            app:layout_constraintBottom_toBottomOf="@id/myLocationIV"
+            app:layout_constraintStart_toEndOf="@id/distanceToProviderTV"
+            app:layout_constraintTop_toTopOf="@id/myLocationIV" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:src="@drawable/ic_provider"
+            app:layout_constraintBottom_toBottomOf="@id/myLocationIV"
+            app:layout_constraintStart_toEndOf="@id/rightArrow2IV"
+            app:layout_constraintTop_toTopOf="@id/myLocationIV" />
+
+        <TextView
+            android:id="@+id/freeSpaces2TV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
@@ -109,40 +151,39 @@
             tools:text="Above 30 " />
 
         <TextView
-            android:id="@+id/freeSpacesTextTV"
+            android:id="@+id/freeSpacesText2TV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:fontFamily="@font/montserrat_medium"
             android:paddingBottom="4dp"
             android:text="free spaces"
-            android:textColor="@color/lightGreen"
-            app:layout_constraintStart_toEndOf="@id/freeSpacesTV"
+            app:layout_constraintStart_toEndOf="@id/freeSpaces2TV"
             app:layout_constraintTop_toBottomOf="@id/myLocationIV" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/circle_with_stroke"
-            app:layout_constraintBottom_toBottomOf="@+id/veracityPB"
-            app:layout_constraintEnd_toEndOf="@+id/veracityPB"
-            app:layout_constraintStart_toStartOf="@+id/veracityPB"
-            app:layout_constraintTop_toTopOf="@+id/veracityPB" />
+            app:layout_constraintBottom_toBottomOf="@+id/veracity2PB"
+            app:layout_constraintEnd_toEndOf="@+id/veracity2PB"
+            app:layout_constraintStart_toStartOf="@+id/veracity2PB"
+            app:layout_constraintTop_toTopOf="@+id/veracity2PB" />
 
         <TextView
-            android:id="@+id/veracityTV"
+            android:id="@+id/veracity2TV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_medium"
             android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="@id/veracityPB"
-            app:layout_constraintEnd_toEndOf="@id/veracityPB"
-            app:layout_constraintStart_toStartOf="@id/veracityPB"
-            app:layout_constraintTop_toTopOf="@id/veracityPB"
+            app:layout_constraintBottom_toBottomOf="@id/veracity2PB"
+            app:layout_constraintEnd_toEndOf="@id/veracity2PB"
+            app:layout_constraintStart_toStartOf="@id/veracity2PB"
+            app:layout_constraintTop_toTopOf="@id/veracity2PB"
             tools:text="30%" />
 
         <ProgressBar
-            android:id="@+id/veracityPB"
+            android:id="@+id/veracity2PB"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="54dp"
             android:layout_height="54dp"
@@ -161,9 +202,9 @@
             android:text="Veracity"
             android:textColor="@android:color/white"
             android:textSize="10sp"
-            app:layout_constraintEnd_toEndOf="@id/veracityPB"
-            app:layout_constraintStart_toStartOf="@id/veracityPB"
-            app:layout_constraintTop_toBottomOf="@id/veracityPB" />
+            app:layout_constraintEnd_toEndOf="@id/veracity2PB"
+            app:layout_constraintStart_toStartOf="@id/veracity2PB"
+            app:layout_constraintTop_toBottomOf="@id/veracity2PB" />
 
     </android.support.constraint.ConstraintLayout>
 </android.support.v7.widget.CardView>
