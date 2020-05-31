@@ -1,6 +1,6 @@
 package com.hfad.parkingfinder.ui.createaccount.dagger
 
-import com.hfad.parkingfinder.apicalls.dagger.RetrofitBasicClient
+import com.hfad.parkingfinder.restclient.dagger.RetrofitBasicClient
 import com.hfad.parkingfinder.database.sharedpreferences.PreferencesManager
 import com.hfad.parkingfinder.ui.createaccount.CreateAccountActivity
 import com.hfad.parkingfinder.ui.createaccount.mvp.CreateAccountCalls

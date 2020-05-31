@@ -1,6 +1,6 @@
 package com.hfad.parkingfinder.ui.login.dagger
 
-import com.hfad.parkingfinder.apicalls.dagger.RetrofitClientModule
+import com.hfad.parkingfinder.restclient.dagger.RetrofitClientModule
 import com.hfad.parkingfinder.dagger.DaggerAppComponent
 import com.hfad.parkingfinder.dagger.IDaggerInjector
 import com.hfad.parkingfinder.database.sharedpreferences.dagger.PreferencesManagerModule

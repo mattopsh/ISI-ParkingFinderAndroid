@@ -1,6 +1,6 @@
 package com.hfad.parkingfinder.ui.welcome.dagger
 
-import com.hfad.parkingfinder.apicalls.dagger.RetrofitBasicClient
+import com.hfad.parkingfinder.restclient.dagger.RetrofitBasicClient
 import com.hfad.parkingfinder.database.sharedpreferences.PreferencesManager
 import com.hfad.parkingfinder.ui.welcome.WelcomeActivity
 import com.hfad.parkingfinder.ui.welcome.mvp.FbCalls
