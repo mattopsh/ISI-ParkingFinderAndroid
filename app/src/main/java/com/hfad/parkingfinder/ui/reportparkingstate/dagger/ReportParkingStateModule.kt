@@ -1,6 +1,6 @@
 package com.hfad.parkingfinder.ui.reportparkingstate.dagger
 
-import com.hfad.parkingfinder.apicalls.report.ReportCalls
+import com.hfad.parkingfinder.restclient.report.ReportCalls
 import com.hfad.parkingfinder.ui.reportparkingstate.ReportParkingStateActivity
 import com.hfad.parkingfinder.ui.reportparkingstate.mvp.ReportParkingStatePresenter
 import dagger.Module
