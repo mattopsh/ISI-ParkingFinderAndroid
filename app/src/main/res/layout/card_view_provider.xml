@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    app:cardBackgroundColor="#66000000"
+    app:cardCornerRadius="16dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/providerTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:maxLines="1"
+            android:text="X-kom"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toStartOf="@+id/providerTypeTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/providerDetailsTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/providerTV"
+            tools:text="ul. Nowa 3, 62-700 Turek" />
+
+        <ImageView
+            android:id="@+id/myLocationIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ic_my_location"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/providerDetailsTV" />
+
+        <ImageView
+            android:id="@+id/leftArrowIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:src="@drawable/arrow_left"
+            app:layout_constraintBottom_toBottomOf="@id/myLocationIV"
+            app:layout_constraintStart_toEndOf="@id/myLocationIV"
+            app:layout_constraintTop_toTopOf="@id/myLocationIV" />
+
+        <TextView
+            android:id="@+id/distanceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/myLocationIV"
+            app:layout_constraintStart_toEndOf="@id/leftArrowIV"
+            app:layout_constraintTop_toTopOf="@id/myLocationIV"
+            tools:text="250m" />
+
+        <ImageView
+            android:id="@+id/rightArrowIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:src="@drawable/arrow_right"
+            app:layout_constraintBottom_toBottomOf="@id/myLocationIV"
+            app:layout_constraintStart_toEndOf="@id/distanceTV"
+            app:layout_constraintTop_toTopOf="@id/myLocationIV" />
+
+        <ImageView
+            android:id="@+id/shopIconIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_provider"
+            app:layout_constraintBottom_toBottomOf="@id/myLocationIV"
+            app:layout_constraintStart_toEndOf="@id/rightArrowIV"
+            app:layout_constraintTop_toTopOf="@id/myLocationIV" />
+
+        <TextView
+            android:id="@+id/providerTypeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="#F2C94C"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="RtvAgd" />
+
+        <TextView
+            android:id="@+id/providerUrlTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:autoLink="web"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="end"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/shopIconIV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/shopIconIV"
+            app:layout_constraintTop_toTopOf="@id/shopIconIV" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

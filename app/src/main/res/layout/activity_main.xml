@@ -24,6 +24,26 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
+            android:id="@+id/favouriteFilledIV"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="38dp"
+            android:background="@drawable/ic_star_filled"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/favouriteBt"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="38dp"
+            android:background="@drawable/ic_star"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
             android:id="@+id/aboutUserIV"
             android:layout_width="24dp"
             android:layout_height="24dp"

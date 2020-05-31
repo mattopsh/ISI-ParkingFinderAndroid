@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    tools:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/filtersTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Filters"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/bg1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#292929"
+        app:layout_constraintBottom_toBottomOf="@+id/endView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shopTypeTV" />
+
+    <TextView
+        android:id="@+id/shopTypeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Shop type"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/bg1"
+        app:layout_constraintTop_toBottomOf="@id/filtersTV" />
+
+    <ToggleButton
+        android:id="@+id/foodTBt"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/toggle_button_orange"
+        android:fontFamily="@font/montserrat_medium"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textOff="Food"
+        android:textOn="Food"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shopTypeTV" />
+
+    <ToggleButton
+        android:id="@+id/diyTBt"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:background="@drawable/toggle_button_yellow"
+        android:fontFamily="@font/montserrat_medium"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textOff="DIY"
+        android:textOn="DIY"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/foodTBt" />
+
+    <ToggleButton
+        android:id="@+id/clothesTbt"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/toggle_button_green"
+        android:fontFamily="@font/montserrat_medium"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textOff="Clothes"
+        android:textOn="Clothes"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/foodTBt" />
+
+    <ToggleButton
+        android:id="@+id/beautyTbt"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/toggle_button_orange"
+        android:fontFamily="@font/montserrat_medium"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textOff="Beauty"
+        android:textOn="Beauty"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/foodTBt" />
+
+    <ToggleButton
+        android:id="@+id/interiorTbt"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/toggle_button_yellow"
+        android:fontFamily="@font/montserrat_medium"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textOff="Interior"
+        android:textOn="Interior"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/foodTBt" />
+
+    <ToggleButton
+        android:id="@+id/rtvAgdTbt"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/toggle_button_green"
+        android:fontFamily="@font/montserrat_medium"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textOff="RtvAgd"
+        android:textOn="RtvAgd"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/foodTBt" />
+
+    <ToggleButton
+        android:id="@+id/sportTbt"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/toggle_button_orange"
+        android:fontFamily="@font/montserrat_medium"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textOff="Sport"
+        android:textOn="Sport"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/beautyTbt" />
+
+    <ToggleButton
+        android:id="@+id/carTBt"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/toggle_button_yellow"
+        android:fontFamily="@font/montserrat_medium"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textOff="Car"
+        android:textOn="Car"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/beautyTbt" />
+
+    <ToggleButton
+        android:id="@+id/entmtTBt"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/toggle_button_green"
+        android:fontFamily="@font/montserrat_medium"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textOff="Entmt."
+        android:textOn="Entmt."
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/beautyTbt" />
+
+    <View
+        android:id="@+id/endView1"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        app:layout_constraintStart_toEndOf="@id/entmtTBt"
+        app:layout_constraintTop_toBottomOf="@id/entmtTBt" />
+
+    <TextView
+        android:id="@+id/maxDistanceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Max distance"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/bg4"
+        app:layout_constraintTop_toBottomOf="@id/entmtTBt" />
+
+    <TextView
+        android:id="@+id/distanceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="1 km"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/maxDistanceTV" />
+
+    <SeekBar
+        android:id="@+id/distanceSB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="4900"
+        android:paddingBottom="4dp"
+        android:progress="2100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/distanceTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="100m"
+        android:textColor="#808080"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/distanceSB"
+        app:layout_constraintStart_toStartOf="@id/distanceSB" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="5 km"
+        android:textColor="#808080"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/distanceSB"
+        app:layout_constraintEnd_toEndOf="@id/distanceSB" />
+
+    <TextView
+        android:id="@+id/cancelTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:paddingBottom="4dp"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:paddingTop="4dp"
+        android:text="@string/cancel"
+        android:textColor="@drawable/tv_white_selector"
+        app:layout_constraintBottom_toBottomOf="@+id/applyTV"
+        app:layout_constraintEnd_toStartOf="@+id/applyTV"
+        app:layout_constraintTop_toBottomOf="@id/distanceSB" />
+
+    <TextView
+        android:id="@+id/applyTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:paddingBottom="4dp"
+        android:paddingEnd="6dp"
+        android:paddingStart="4dp"
+        android:paddingTop="4dp"
+        android:text="Apply"
+        android:textColor="@drawable/tv_white_selector"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/clearTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:paddingBottom="4dp"
+        android:paddingStart="6dp"
+        android:text="Clear"
+        android:textColor="@drawable/tv_white_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

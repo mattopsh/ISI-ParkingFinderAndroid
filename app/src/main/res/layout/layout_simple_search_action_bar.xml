@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/actionBar2Bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#66ff0000"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp" />
+
+    <EditText
+        android:id="@+id/searchET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColorHint="#78ffffff"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        app:layout_constraintBottom_toBottomOf="@id/actionBar2Bg"
+        app:layout_constraintEnd_toStartOf="@id/clearIV"
+        app:layout_constraintStart_toEndOf="@+id/backArrow2IV"
+        app:layout_constraintTop_toTopOf="@id/actionBar2Bg"
+        tools:text="Example search hint" />
+
+    <ImageView
+        android:id="@+id/backArrow2IV"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:padding="8dp"
+        android:src="@drawable/button_back_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/searchET"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/searchET" />
+
+    <ImageView
+        android:id="@+id/clearIV"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="12dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_clear"
+        app:layout_constraintBottom_toBottomOf="@id/searchET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/searchET" />
+
+</android.support.constraint.ConstraintLayout>
