@@ -1,7 +1,7 @@
 package com.hfad.parkingfinder.ui.createaccount.mvp
 
-import com.hfad.parkingfinder.restclient.auth.dto.TokensResponseDto
-import com.hfad.parkingfinder.restclient.auth.dto.UserCredentialsDto
+import com.hfad.parkingfinder.apicalls.auth.dto.TokensResponseDto
+import com.hfad.parkingfinder.apicalls.auth.dto.UserCredentialsDto
 import com.hfad.parkingfinder.utils.mvp.BasePresenter
 import com.hfad.parkingfinder.utils.mvp.ViewException
 import com.hfad.parkingfinder.utils.mvp.ViewLoad

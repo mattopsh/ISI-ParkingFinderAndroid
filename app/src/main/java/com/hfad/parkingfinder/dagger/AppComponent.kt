@@ -1,10 +1,10 @@
 package com.hfad.parkingfinder.dagger
 
-import com.hfad.parkingfinder.restclient.auth.AuthCallsModule
-import com.hfad.parkingfinder.restclient.fb.FbCallsModule
-import com.hfad.parkingfinder.restclient.parking.ParkingCallsModule
-import com.hfad.parkingfinder.restclient.provider.ProviderCallsModule
-import com.hfad.parkingfinder.restclient.report.ReportCallsModule
+import com.hfad.parkingfinder.apicalls.auth.AuthCallsModule
+import com.hfad.parkingfinder.apicalls.fb.FbCallsModule
+import com.hfad.parkingfinder.apicalls.parking.ParkingCallsModule
+import com.hfad.parkingfinder.apicalls.provider.ProviderCallsModule
+import com.hfad.parkingfinder.apicalls.report.ReportCallsModule
 import com.hfad.parkingfinder.ui.createaccount.dagger.CreateAccountComponent
 import com.hfad.parkingfinder.ui.createaccount.dagger.CreateAccountModule
 import com.hfad.parkingfinder.ui.login.dagger.LoginComponent

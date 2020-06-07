@@ -1,8 +1,8 @@
 package com.hfad.parkingfinder.ui.welcome.mvp
 
-import com.hfad.parkingfinder.restclient.auth.AuthCalls
-import com.hfad.parkingfinder.restclient.auth.dto.FbTokenDto
-import com.hfad.parkingfinder.restclient.auth.dto.TokensResponseDto
+import com.hfad.parkingfinder.apicalls.auth.AuthCalls
+import com.hfad.parkingfinder.apicalls.auth.dto.FbTokenDto
+import com.hfad.parkingfinder.apicalls.auth.dto.TokensResponseDto
 import io.reactivex.Single
 import retrofit2.Response
 import retrofit2.Retrofit
