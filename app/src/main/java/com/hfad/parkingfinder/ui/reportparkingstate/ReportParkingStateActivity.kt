@@ -2,7 +2,10 @@ package com.hfad.parkingfinder.ui.reportparkingstate
 
 import android.os.Bundle
 import com.hfad.parkingfinder.R
+import com.hfad.parkingfinder.apicalls.report.dto.ParkingStateDto
 import com.hfad.parkingfinder.ui.base.BaseActivity
+import com.hfad.parkingfinder.ui.dialog.NoInternetConnectionDialog
+import com.hfad.parkingfinder.ui.dialog.ProgressDialog
 import com.hfad.parkingfinder.ui.reportparkingstate.dagger.ReportParkingStateInjector
 import com.hfad.parkingfinder.ui.reportparkingstate.mvp.ParkingStateEnum
 import com.hfad.parkingfinder.ui.reportparkingstate.mvp.ReportParkingStatePresenter
@@ -29,11 +32,21 @@ class ReportParkingStateActivity : BaseActivity() {
     }
 
     fun showTryAgainDialog(parkingStateDto: ParkingStateDto) {
-        // todo
+        val noInternetConnectionDialog = NoInternetConnectionDialog()
+        noInternetConnectionDialog.onTryAgainListener = {
+            presenter.sendParkingState(parkingStateDto)
+        }
+        noInternetConnectionDialog.show(fragmentManager, null)
     }
 
     fun setLoading(isLoading: Boolean) {
-        // todo
+        if (isLoading) {
+            progressDialog?.dismiss()
+            progressDialog = ProgressDialog()
+            progressDialog!!.show(fragmentManager, null)
+        } else {
+            progressDialog?.dismiss()
+        }
     }
 
     private fun initButtonsListeners() {

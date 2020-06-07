@@ -1,7 +1,7 @@
 package com.hfad.parkingfinder.ui.reportparkingstate.mvp
 
-
-import android.location.LocationProvider
+import com.hfad.parkingfinder.apicalls.report.ReportCalls
+import com.hfad.parkingfinder.apicalls.report.dto.ParkingStateDto
 import com.hfad.parkingfinder.ui.reportparkingstate.ReportParkingStateActivity
 import com.hfad.parkingfinder.utils.location.LocationProvider
 import com.hfad.parkingfinder.utils.mvp.BasePresenter
