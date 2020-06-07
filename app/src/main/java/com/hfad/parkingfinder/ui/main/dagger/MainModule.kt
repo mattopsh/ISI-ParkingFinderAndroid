@@ -1,8 +1,12 @@
 package com.hfad.parkingfinder.ui.main.dagger
 
+import com.hfad.parkingfinder.apicalls.dagger.RetrofitAuthorizationClient
+import com.hfad.parkingfinder.apicalls.dagger.RetrofitBasicClient
+import com.hfad.parkingfinder.apicalls.fb.FbCalls
+import com.hfad.parkingfinder.apicalls.parking.ParkingCalls
+import com.hfad.parkingfinder.database.room.ParkingDb
 import com.hfad.parkingfinder.ui.main.MainActivity
 import com.hfad.parkingfinder.ui.main.MainPresenter
-import com.hfad.parkingfinder.ui.welcome.mvp.FbCalls
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
