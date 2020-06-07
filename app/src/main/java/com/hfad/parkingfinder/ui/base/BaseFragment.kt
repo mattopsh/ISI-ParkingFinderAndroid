@@ -11,8 +11,8 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.Toast
 import com.hfad.parkingfinder.R
+import com.hfad.parkingfinder.ui.welcome.WelcomeActivity
 import com.hfad.parkingfinder.utils.mvp.ViewException
-import com.hfad.parkingfinder.R
 
 abstract class BaseFragment : ViewException, Fragment() {
 
@@ -42,7 +42,7 @@ abstract class BaseFragment : ViewException, Fragment() {
 
     override fun handleHttpException(code: Int): Boolean {
         if (code == 401) {
-            startActivity(Intent(activity, MainActivity::class.java).apply {
+            startActivity(Intent(activity, WelcomeActivity::class.java).apply {
                 addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
             })
             activity!!.finish()

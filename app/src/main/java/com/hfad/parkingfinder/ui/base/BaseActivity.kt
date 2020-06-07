@@ -10,7 +10,10 @@ import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.Toast
+import com.hfad.parkingfinder.R
+import com.hfad.parkingfinder.ui.welcome.WelcomeActivity
 import com.hfad.parkingfinder.utils.mvp.ViewException
+import com.hfad.parkingfinder.utils.resource.getColorDrawable
 import kotlinx.android.synthetic.main.layout_normal_action_bar.view.*
 import kotlinx.android.synthetic.main.layout_search_action_bar.view.*
 import org.jetbrains.anko.contentView
@@ -72,7 +75,7 @@ abstract class BaseActivity : ViewException, AppCompatActivity() {
 
     override fun handleHttpException(code: Int): Boolean {
         if (code == 401) {
-            startActivity(intentFor<MainActivity>().addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK))
+            startActivity(intentFor<WelcomeActivity>().addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK))
             finish()
             return true
         }
