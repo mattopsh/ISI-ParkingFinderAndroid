@@ -1,7 +1,6 @@
 package com.hfad.parkingfinder.ui.login.mvp
 
 import com.hfad.parkingfinder.apicalls.auth.dto.UserCredentialsDto
-import com.hfad.parkingfinder.utils.PreferencesManager
 import com.hfad.parkingfinder.utils.validator.Validator
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable

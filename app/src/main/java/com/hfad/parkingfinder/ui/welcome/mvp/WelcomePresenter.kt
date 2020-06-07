@@ -1,6 +1,5 @@
 package com.hfad.parkingfinder.ui.welcome.mvp
 
-import com.hfad.parkingfinder.utils.PreferencesManager
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers

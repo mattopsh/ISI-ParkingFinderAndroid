@@ -1,4 +1,4 @@
-package com.hfad.parkingfinder.utils
+package com.hfad.parkingfinder.database.sharedpreferences
 
 import android.content.SharedPreferences
 import android.preference.PreferenceManager
@@ -8,6 +8,7 @@ object PreferencesManager {
 
     private const val ACCESS_TOKEN = "ACCESS_TOKEN"
     private const val REFRESH_TOKEN = "REFRESH_TOKEN"
+    private const val FAVORITES = "FAVORITES"
 
     private val sharedPref: SharedPreferences =
             PreferenceManager.getDefaultSharedPreferences(ParkingFinderApp.instance)
@@ -32,4 +33,21 @@ object PreferencesManager {
         return sharedPref.getString(REFRESH_TOKEN, "")
     }
 
+    fun addToFavorites(parkingNodeId: Long) {
+        val favorites: MutableSet<Long> = getFavorites()
+        sharedPref.edit()
+                .putStringSet(FAVORITES, favorites.apply { add(parkingNodeId) }.map { "$it" }.toSet())
+                .apply()
+    }
+
+    fun removeFromFavorites(parkingNodeId: Long) {
+        val favorites: MutableSet<Long> = getFavorites()
+        sharedPref.edit()
+                .putStringSet(FAVORITES, favorites.filter { it == parkingNodeId }.map { "$it" }.toSet())
+                .apply()
+    }
+
+    fun getFavorites(): MutableSet<Long> {
+        return sharedPref.getStringSet(FAVORITES, emptySet()).map { it.toLong() }.toMutableSet()
+    }
 }

@@ -6,7 +6,6 @@ import com.hfad.parkingfinder.ui.login.LoginActivity
 import com.hfad.parkingfinder.ui.login.mvp.LoginCalls
 import com.hfad.parkingfinder.ui.login.mvp.LoginMVP
 import com.hfad.parkingfinder.ui.login.mvp.LoginPresenter
-import com.hfad.parkingfinder.utils.PreferencesManager
 import com.hfad.parkingfinder.utils.validator.Validator
 
 import dagger.Module

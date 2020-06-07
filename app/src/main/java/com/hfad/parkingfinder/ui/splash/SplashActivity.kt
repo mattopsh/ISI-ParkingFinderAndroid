@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity
 import com.hfad.parkingfinder.R
 import com.hfad.parkingfinder.ui.main.MainActivity
 import com.hfad.parkingfinder.ui.welcome.WelcomeActivity
-import com.hfad.parkingfinder.utils.PreferencesManager
 
 class SplashActivity : AppCompatActivity() {
 
