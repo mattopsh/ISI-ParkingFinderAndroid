@@ -68,16 +68,18 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-
         <activity
                 android:name=".ui.findbylocation.FindByLocationActivity"
-                android:screenOrientation="portrait"/>
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeSolidNav" />
         <activity
                 android:name=".ui.findnearest.FindNearestActivity"
-                android:screenOrientation="portrait"/>
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeSolidNav" />
         <activity
                 android:name=".ui.findneartoprovider.FindNearToProviderActivity"
-                android:screenOrientation="portrait"/>
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeSolidNav" />
         <activity
                 android:name=".ui.reportparkingstate.ReportParkingStateActivity"
                 android:screenOrientation="portrait" />
@@ -89,7 +91,8 @@
                 android:screenOrientation="portrait" />
         <activity
                 android:name=".ui.reportinconsistency.other.ReportOtherInconsistencyActivity"
-                android:screenOrientation="portrait"/>
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize" />
         <activity
                 android:name=".ui.reportinconsistency.nonexistentparking.ReportNonexistentParkingActivity"
                 android:screenOrientation="portrait"
@@ -106,7 +109,8 @@
                 android:screenOrientation="portrait" />
         <activity
                 android:name=".ui.findprovider.FindProviderActivity"
-                android:screenOrientation="portrait"/>
+                android:screenOrientation="portrait"
+                android:theme="@style/AppThemeSolidNav" />
 
     </application>
 
